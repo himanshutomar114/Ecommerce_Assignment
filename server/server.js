@@ -21,8 +21,8 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173"
-      
+      "http://localhost:5173",
+      "https://ecommerce-assignment-topaz.vercel.app/"
       ],
     credentials: true, // allow frontend to send cookies
   })
