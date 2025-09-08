@@ -22,7 +22,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://ecommerce-assignment-topaz.vercel.app/"
+      "https://ecommerce-assignment-topaz.vercel.app"
       ],
     credentials: true, // allow frontend to send cookies
   })
