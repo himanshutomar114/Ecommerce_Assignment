@@ -204,7 +204,7 @@ export async function forgotPassword(req, res) {
 
   const baseURL =
    process.env.NODE_ENV === "production"
-    ? "https://certi-fly.vercel.app"
+    ? "https://ecommerce-assignment-pvot.onrender.com"
     : "http://localhost:5173";
   const resetLink = `${baseURL}/reset-password/${token}`;
 

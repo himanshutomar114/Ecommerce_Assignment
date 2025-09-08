@@ -21,7 +21,9 @@ router.get(
 
     // Send token in query string to frontend
     const frontendURL =
-      `http://localhost:5173/oauth-success?token=${token}`;
+     process.env.NODE_ENV === "production"
+     ? `http://localhost:5173/oauth-success?token=${token}`
+     : `https://ecommerce-assignment-topaz.vercel.app/oauth-success?token=${token}`;
 
     res.redirect(frontendURL);
   }
