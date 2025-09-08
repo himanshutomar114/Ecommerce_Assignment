@@ -1,0 +1,9 @@
+# Node.js
+node_modules/
+.env
+/dist
+/build
+
+# React/Next
+client/node_modules/
+
