@@ -150,7 +150,9 @@ const handleLogin = async (e) => {
          <button
   onClick={() => {
     const backendURL =
-       "http://localhost:3000";
+       import.meta.env.MODE === "production"
+    ? "https://ecommerce-assignment-pvot.onrender.com" 
+    : "http://localhost:3000";
     window.location.href = `${backendURL}/api/auth/google`;
   }}
   className="w-full bg-white text-black font-medium py-2 px-6 rounded-xl flex items-center justify-center gap-2 hover:scale-105 hover:bg-gray-100 transition-all duration-200 "

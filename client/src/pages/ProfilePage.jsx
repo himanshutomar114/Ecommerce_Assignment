@@ -153,9 +153,9 @@ const handleResetPassword = async () => {
   setResetMessage('');
 
   const backendURL =
-    import.meta.env.MODE === "development"
-      ? "http://localhost:3000"
-      : "https://certificate-sender-api.onrender.com";
+    import.meta.env.MODE === "production"
+    ? "https://ecommerce-assignment-pvot.onrender.com" 
+    : "http://localhost:3000";
 
   navigator.geolocation.getCurrentPosition(
     async (position) => {
