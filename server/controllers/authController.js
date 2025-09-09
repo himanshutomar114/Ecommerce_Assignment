@@ -204,7 +204,7 @@ export async function forgotPassword(req, res) {
 
   const baseURL =
    process.env.NODE_ENV === "production"
-    ? "https://ecommerce-assignment-pvot.onrender.com"
+    ? "https://ecommerce-assignment-topaz.vercel.app"
     : "http://localhost:5173";
   const resetLink = `${baseURL}/reset-password/${token}`;
 
